@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="script.js" defer></script>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!--font awesome cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- <section for Navigation bar> -->
+      <div class="fContainer flex flex-col">
+        <!-- <div class="flex flex-row justify-between"> -->
+        <div class="navContainer">
+          <div class="logo">
+            <img src="https://myeatandtravelstory.files.wordpress.com/2019/05/cover-sang-pisang-1500x1001.jpg?w=1500&h=1001&crop=1"
+              alt="logo" width="80"/>
+          </div>
+          <div class="midnav" flex flex-row gap-4>
+            <span><a href="/">Menu</a></span>
+            <li class="list-inline-item g-mx-4 g-color-primary">|</li>
+            <span><a href="/">About us</a></span>
+            <li class="list-inline-item g-mx-4 g-color-primary">|</li>
+            <span><a href="/" class="active">Shop now!</a></span>
+          </div>
+          <div class="rightnav" flex flex-row gap-4>
+            <span><a href="/">Profile</a></span>
+            <span><a href="/">Your cart</a></span>
+          </div>
+        </div> 
+      </div>
+      <section aria-label="What's new!">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">&#8592;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#8594;</button>
+          <ul data-slides class="caraousel-image">
+            <li class="slide" data-active>
+              <img src="https://stackblitz.com/files/web-platform-xkarxe/github/ChirCayo/homepage-project/main/Image/Diskon1.png" alt="Diskon1">            
+            </li>
+            <li class="slide">
+              <img src="https://stackblitz.com/files/web-platform-xkarxe/github/ChirCayo/homepage-project/main/Image/Bombolon.png" alt="Bomboloni">            
+            </li><li class="slide">
+              <img src="https://stackblitz.com/files/web-platform-xkarxe/github/ChirCayo/homepage-project/main/Image/Molen.png" alt="Molen">            
+            </li>
+          </ul>
+        </div>
+      <br>
+      </section>
+        
+      <!-- <section for Pupular menu> -->
+      <section aria-label="Popular menu!">
+        <p class="section-menu"> Popular menu 🔥</p>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="https://d1sag4ddilekf6.cloudfront.net/compressed_webp/items/IDITE20221118170103044551/photo/4b5e8ca368254f95a60938397707ab5d_1668790863239138174.webp" alt="nugget matah" style="width:100%">
+              <div class="container">
+                <h2>Banana Strips</h2>
+                <p class="title">Pisang goreng strips dengan pilihan saus spicy cheese/ sambal matah/ salted caramel</p>
+                <p>Rp. 31.900</p>
+                <p><button class="button">Order now!</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="https://d1sag4ddilekf6.cloudfront.net/compressed_webp/items/IDGFSTI000013sd-CZCYLFTVG3W3BE/photo/b82f0025c5464862a32b2125a209d77d_1585551612418303986.webp" alt="Naget Pisang Coklat" style="width:100%">
+              <div class="container">
+                <h2>Naget Pisang Coklat</h2>
+                <p class="title">Naget Pisang Dibalut Dengan Glaze Coklat, Isi 10 Pcs. Free 1 Extra Topping</p>
+                <p>Rp. 30,000</p>
+                <p><button class="button">Order now!</button></p>
+              </div>
+            </div>
+          </div>          
+          <div class="column">
+            <div class="card">
+              <img src="img3.jpg" alt="John" style="width:100%">
+              <div class="container">
+                <h2>John Doe</h2>
+                <p class="title">Designer</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>example@example.com</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section for Review> -->
+        <section class="review" id="review">
+          <h1 class="heading">Customer's <span> Review </span></h1>
+  
+          <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide box">
+                <center>
+                  <img
+                    src="https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN2lpQlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--871b8ee7f290bc5fbb14d87e60e1d27d1eb1115b/Namjoon.jpg"
+                    alt=""
+                  />
+                </center>
+                <p>
+                  "Pertama kali makan pisang nugget dan langsung jatuh cinta sama
+                  rasanya!"
+                </p>
+                <b><h3>Kim Namjoon</h3></b>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+  
+              <div class="swiper-slide box">
+                <center>
+                  <img
+                    src="https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN3lpQlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--5970d95570158404c8f5958c3af1fc6b455805b0/Seokjin.jpg"
+                    alt=""
+                  />
+                </center>
+                <p>
+                  "Asli ini enak banget! Pisangnya tebel, toppingnya banyak,
+                  crispynya juga dapet"
+                </p>
+                <b><h3>Kim Seokjin</h3></b>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+  
+              <div class="swiper-slide box">
+                <center>
+                  <img
+                    src="https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN1NpQlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--3e5700913c62ac3e0549ef5f814903deea623047/Yoongi.jpg"
+                    alt=""
+                  />
+                </center>
+                <p>
+                  "Rasa enak, topping banyak dan bervariasi, harga terjangkau.
+                  Cuma agak lama nunggunya"
+                </p>
+                <b><h3>Min Yoongi</h3></b>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+  
+              <div class="swiper-slide box">
+                <center>
+                  <img
+                    src="https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN3FpQlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--4bd07d951838fd850e02f1ca8fb6aefe9638bdf0/Hoseok.jpg"
+                    alt=""
+                  />
+                </center>
+                <p>
+                  "Sumpah ini enaaak banget, apalagi ice banananya. Dulu beli pas
+                  ada promo jadi murah bangeet"
+                </p>
+                <b><h3>Jung Hoseok</h3></b>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+  
+              <div class="swiper-slide box">
+                <center>
+                  <img
+                    src="https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN21pQlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--5634ec07add3823ae3e40c00f5a2dbade04b7e18/Jimin.jpg"
+                    alt=""
+                  />
+                </center>
+                <p>
+                  Salah satu pisang nugget terenak, variasi topping juga banyak.
+                  Harga terjangkau
+                </p>
+                <b><h3>Park Jimin</h3></b>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+  
+              <div class="swiper-slide box">
+                <center>
+                  <img
+                    src="https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNzZpQlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--94d22d29204fbc19da486e0cf86abf28f69d35c5/V.jpg"
+                    alt=""
+                  />
+                </center>
+                <p>
+                  "Rasa nuggetnya enak, apalagi ditambah topping almondnya. Agak
+                  pricey tapi worth it sih"
+                </p>
+                <b><h3>Kim Taehyung</h3></b>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+  
+              <div class="swiper-slide box">
+                <center>
+                  <img
+                    src="https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNzJpQlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d1f5a6ffd9d2de85de6047348f20a72c289a0f84/Jeongguk.jpg"
+                    alt=""
+                  />
+                </center>
+                <p>
+                  "Ice Banana paling enak yang pernah Kookie coba, apalagi yang
+                  varian avocado. Jadi mau lagii!!"
+                </p>
+                <b><h3>Jeon Jungkook</h3></b>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <a class="button-link" href="#">View All Review</a>
+          </div>
+        </section>
+  
+        <!-- <section for Footer> -->
+        <section class="footer">
+          <div class="box-container">
+            <div class="box">
+              <h3>SANG PISANG</h3>
+              <p>Contact Us</p>
+              <div class="share">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+
+
+      <div class="flex flex-col">
+          <div>
+          <span>REVIEW CUSTOMER</span>
+          </div>
+        <div class="flex flex-">
+            <span>PHOTO 1</span>
+            <span>PHOTO 2</span>
+        </div>
+      </div>
+      <br>
+      <div class="insta-section">insta</div>
+      <br>
+      <div class="footer-section">footer</div>
+      </div>
+    </main>
+  </body>
+</html>
